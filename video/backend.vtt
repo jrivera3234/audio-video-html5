@@ -1,0 +1,851 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.000
+Every website can be split up into two
+parts, the front end and the backend.
+
+00:00:01.000 --> 00:00:02.000
+The front end is all the visual stuff
+you see on the webpage and the backend is
+
+00:00:02.000 --> 00:00:03.000
+what saves and manages your data. For
+example, if you are on amazon.com,
+
+00:00:03.000 --> 00:00:04.000
+the backend would store your
+order history, your profile.
+
+00:00:04.000 --> 00:00:05.000
+It would load search results
+and much more. In this video,
+
+00:00:05.000 --> 00:00:06.000
+we're going to take a look
+at the technologies that
+are used in the backend of a
+
+00:00:06.000 --> 00:00:07.000
+website and in another video we
+explore the front end technologies.
+
+00:00:07.000 --> 00:00:08.000
+As an example, let's say that we're
+on amazon.com and we do some shopping,
+
+00:00:08.000 --> 00:00:09.000
+and now we're ready to make an order.
+When I click place order, what happens,
+
+00:00:09.000 --> 00:00:10.000
+we're going to start from the ground up.
+
+00:00:10.000 --> 00:00:11.000
+Any computer that's
+connected to the internet,
+
+00:00:11.000 --> 00:00:12.000
+including your computer and my computer,
+
+00:00:12.000 --> 00:00:13.000
+can send a message across the internet
+to another computer that's also connected
+
+00:00:13.000 --> 00:00:14.000
+to the internet.
+So to simplify things,
+
+00:00:14.000 --> 00:00:15.000
+Amazon has a computer in their
+office building somewhere,
+
+00:00:15.000 --> 00:00:16.000
+and our computer is going to send a
+message continuing our order to that
+
+00:00:16.000 --> 00:00:17.000
+Amazon computer. In this scenario,
+
+00:00:17.000 --> 00:00:18.000
+the computer that is sending the
+message is called the client,
+
+00:00:18.000 --> 00:00:19.000
+and the computer that is receiving
+the message is called the server.
+
+00:00:19.000 --> 00:00:20.000
+But before this happens, computers,
+
+00:00:20.000 --> 00:00:21.000
+they can't receive messages
+from the internet by default.
+
+00:00:21.000 --> 00:00:22.000
+We have to program them to be able
+to receive messages. To do that,
+
+00:00:22.000 --> 00:00:23.000
+we need a backend programming language.
+
+00:00:23.000 --> 00:00:24.000
+Almost every programming language has
+a feature that turns a computer into a
+
+00:00:24.000 --> 00:00:25.000
+server and allows it to receive messages.
+
+00:00:25.000 --> 00:00:26.000
+Popular backend programming languages
+are JavaScript, sometimes called node js,
+
+00:00:26.000 --> 00:00:27.000
+Python, Ruby, and Java. However,
+
+00:00:27.000 --> 00:00:28.000
+using a backend programming language by
+itself is actually really difficult and
+
+00:00:28.000 --> 00:00:29.000
+requires a huge amount of code.
+
+00:00:29.000 --> 00:00:30.000
+So there are two tools that we use to
+help with this. A backend framework and a
+
+00:00:30.000 --> 00:00:31.000
+package manager,
+
+00:00:31.000 --> 00:00:32.000
+a backend framework helps us create a
+server much easier and with a lot less
+
+00:00:32.000 --> 00:00:33.000
+code.
+
+00:00:33.000 --> 00:00:34.000
+Each backend programming language has a
+few different frameworks to choose from,
+
+00:00:34.000 --> 00:00:35.000
+but the most popular ones are
+Express JS for JavaScript, Python,
+
+00:00:35.000 --> 00:00:36.000
+Django, Rubion Rails, and
+Java Spring. In the backend,
+
+00:00:36.000 --> 00:00:37.000
+we also use a lot of code that other
+people have written called packages to do
+
+00:00:37.000 --> 00:00:38.000
+common tasks like doing
+calculations, talking to a database,
+
+00:00:38.000 --> 00:00:39.000
+and setting up user
+login and authentication.
+
+00:00:39.000 --> 00:00:40.000
+We typically use a lot of
+packages in our backend,
+
+00:00:40.000 --> 00:00:41.000
+and in order to install and
+manage all these packages,
+
+00:00:41.000 --> 00:00:42.000
+we use something called a package manager.
+
+00:00:42.000 --> 00:00:43.000
+Each language has its own package manager.
+
+00:00:43.000 --> 00:00:44.000
+The most popular ones are NPM
+for JavaScript, PIP for Python,
+
+00:00:44.000 --> 00:00:45.000
+bundler for Ruby, and Maven for Java.
+
+00:00:45.000 --> 00:00:46.000
+These are all the technologies we
+need to create our backend server.
+
+00:00:46.000 --> 00:00:47.000
+The next problem we have is
+we need somewhere to save
+the data for our website.
+
+00:00:47.000 --> 00:00:48.000
+Going back to our Amazon example,
+data could mean our user data,
+
+00:00:48.000 --> 00:00:49.000
+like the login information,
+order, history,
+
+00:00:49.000 --> 00:00:50.000
+as well as data for all the products
+that are being sold on Amazon,
+
+00:00:50.000 --> 00:00:51.000
+the descriptions, the ratings, and the.
+
+00:00:51.000 --> 00:00:52.000
+Reviews. To do this, we use a database.
+
+00:00:52.000 --> 00:00:53.000
+A database helps us store and manage data.
+
+00:00:53.000 --> 00:00:54.000
+It's just a piece of software that
+usually runs on a different computer,
+
+00:00:54.000 --> 00:00:55.000
+and we have to do some setups so that
+our backend can communicate with the
+
+00:00:55.000 --> 00:00:56.000
+database. The most popular
+databases are MySQL, Postgres,
+
+00:00:56.000 --> 00:00:57.000
+and MongoDB. All right, so
+if you're just starting out,
+
+00:00:57.000 --> 00:00:58.000
+this is basically all
+you need for the backend.
+
+00:00:58.000 --> 00:00:59.000
+You can build most of your projects
+with just a server and a database.
+
+00:00:59.000 --> 00:01:00.000
+For example, here's how our
+Amazon scenario could work.
+
+00:01:00.000 --> 00:01:01.000
+When the customer places
+an order in the front end,
+
+00:01:01.000 --> 00:01:02.000
+the front end sends a message
+containing the order to the backend.
+
+00:01:02.000 --> 00:01:03.000
+The backend then saves the order to a
+database and sends back a message to the
+
+00:01:03.000 --> 00:01:04.000
+front end confirming that
+the order was created.
+
+00:01:04.000 --> 00:01:05.000
+The message that the front end sends
+to the backend is known as a request,
+
+00:01:05.000 --> 00:01:06.000
+and the message that the backend sends
+back is known as a response. This is
+
+00:01:06.000 --> 00:01:07.000
+called a request response cycle,
+
+00:01:07.000 --> 00:01:08.000
+and this is generally how web
+applications work. Here's another example.
+
+00:01:08.000 --> 00:01:09.000
+Let's say that you're
+in the Amazon warehouse.
+
+00:01:09.000 --> 00:01:10.000
+The warehouse might have a different
+front end that sends a request to the
+
+00:01:10.000 --> 00:01:11.000
+backend to get our order.
+
+00:01:11.000 --> 00:01:12.000
+The backend then gets our order from
+the database and sends it back to the
+
+00:01:12.000 --> 00:01:13.000
+warehouse front end, and then they
+go ahead and prepare our order.
+
+00:01:13.000 --> 00:01:14.000
+Now that we've seen the overall flow,
+
+00:01:14.000 --> 00:01:15.000
+we're going to dive deeper and take
+a look at what's inside a request.
+
+00:01:15.000 --> 00:01:16.000
+Here's a simplified example of a
+request to create an Amazon order.
+
+00:01:16.000 --> 00:01:17.000
+If we read over it, we can see that
+it's actually really easy to understand.
+
+00:01:17.000 --> 00:01:18.000
+We have the items that we ordered,
+
+00:01:18.000 --> 00:01:19.000
+the quantities and some other information
+about our Amazon order. At the top,
+
+00:01:19.000 --> 00:01:20.000
+we have the type of the
+request, the domain name,
+
+00:01:20.000 --> 00:01:21.000
+and the URL path. This describes where
+this request is going and what type of
+
+00:01:21.000 --> 00:01:22.000
+request This is. First of all, Amazon.
+
+00:01:22.000 --> 00:01:23.000
+The company has bought the
+domain name amazon.com,
+
+00:01:23.000 --> 00:01:24.000
+and they configured it so that any
+request going to amazon.com will be
+
+00:01:24.000 --> 00:01:25.000
+redirected to that server
+in their office building.
+
+00:01:25.000 --> 00:01:26.000
+So that's why we're sending
+this request to amazon.com.
+
+00:01:26.000 --> 00:01:27.000
+The type and the URL path. Identify
+what kind of request this is.
+
+00:01:27.000 --> 00:01:28.000
+So in this example, this is a post
+request to slash orders. In the backend,
+
+00:01:28.000 --> 00:01:29.000
+we use our programming language and
+backend framework to define what types of
+
+00:01:29.000 --> 00:01:30.000
+requests are allowed and how we should
+handle these requests. For example,
+
+00:01:30.000 --> 00:01:31.000
+we can allow a post slash orders request,
+
+00:01:31.000 --> 00:01:32.000
+and whenever we get a
+post slash orders request,
+
+00:01:32.000 --> 00:01:33.000
+we will create an order using our
+programming language and save it to our
+
+00:01:33.000 --> 00:01:34.000
+database. We can also allow a get
+slash order request, and in this case,
+
+00:01:34.000 --> 00:01:35.000
+we will retrieve the order history
+from the database and send it back as a
+
+00:01:35.000 --> 00:01:36.000
+response. Another example is a delete
+slash order request where we will cancel
+
+00:01:36.000 --> 00:01:37.000
+the order.
+
+00:01:37.000 --> 00:01:38.000
+So this list of all the different types
+of requests that the backend allows is
+
+00:01:38.000 --> 00:01:39.000
+called an a API application
+programming interface.
+
+00:01:39.000 --> 00:01:40.000
+The API is one of the most important
+concepts in backend programming.
+
+00:01:40.000 --> 00:01:41.000
+If you send a request that
+is not allowed by the api,
+
+00:01:41.000 --> 00:01:42.000
+the backend will respond with an error.
+
+00:01:42.000 --> 00:01:43.000
+So we mentioned earlier that we can
+identify requests using a type and a URL
+
+00:01:43.000 --> 00:01:44.000
+path. There are several types we
+can choose from, such as post get,
+
+00:01:44.000 --> 00:01:45.000
+put and delete, and the URL
+path can be anything we want.
+
+00:01:45.000 --> 00:01:46.000
+So why in this example do
+we choose post slash orders?
+
+00:01:46.000 --> 00:01:47.000
+This is just a naming
+convention for our requests,
+
+00:01:47.000 --> 00:01:48.000
+and this naming convention is called
+rest representational state transfer.
+
+00:01:48.000 --> 00:01:49.000
+In rest, the type of the
+request has a special meaning.
+
+00:01:49.000 --> 00:01:50.000
+So post means to create
+something, and in this case,
+
+00:01:50.000 --> 00:01:51.000
+post slash orders means to create an
+order, get means to get something,
+
+00:01:51.000 --> 00:01:52.000
+and delete means to delete something
+and so on. An API that uses the
+
+00:01:52.000 --> 00:01:53.000
+REST naming convention
+is called a REST api.
+
+00:01:53.000 --> 00:01:54.000
+REST is the most common convention
+that we use for our APIs,
+
+00:01:54.000 --> 00:01:55.000
+but there are several other
+conventions that we could use.
+
+00:01:55.000 --> 00:01:56.000
+One of them is called GraphQL,
+
+00:01:56.000 --> 00:01:57.000
+which uses Post slash GraphQL
+for all of our requests,
+
+00:01:57.000 --> 00:01:58.000
+and another one is called rpc,
+
+00:01:58.000 --> 00:01:59.000
+which uses post and a
+more detailed D URL path,
+
+00:01:59.000 --> 00:02:00.000
+like post slash create order or
+post slash get order history.
+
+00:02:00.000 --> 00:02:01.000
+So that is what a request is when
+an API is and what rest means. Now,
+
+00:02:01.000 --> 00:02:02.000
+let's talk about infrastructure nowadays.
+
+00:02:02.000 --> 00:02:03.000
+Instead of company's purchasing their
+own computers to run their websites,
+
+00:02:03.000 --> 00:02:04.000
+they rent computers from
+a cloud computing company.
+
+00:02:04.000 --> 00:02:05.000
+The biggest cloud computing companies
+are aws, Amazon Web Services,
+
+00:02:05.000 --> 00:02:06.000
+gcp, Google Cloud platform,
+and Microsoft Azure.
+
+00:02:06.000 --> 00:02:07.000
+The basic idea of cloud computing is
+you're renting a bunch of computers.
+
+00:02:07.000 --> 00:02:08.000
+This is also known as IAS infrastructure
+as a service. Behind the scenes,
+
+00:02:08.000 --> 00:02:09.000
+AWS has a giant powerful
+computer, and inside its software,
+
+00:02:09.000 --> 00:02:10.000
+it's running many smaller computers,
+
+00:02:10.000 --> 00:02:11.000
+and we're actually renting one
+of these smaller computers,
+
+00:02:11.000 --> 00:02:12.000
+and these smaller computers
+only exist in these software,
+
+00:02:12.000 --> 00:02:13.000
+so we call them virtual machines
+or VMs. So to run our website,
+
+00:02:13.000 --> 00:02:14.000
+we rent a VM from AWS to run our backend,
+
+00:02:14.000 --> 00:02:15.000
+and we also rent another
+VM to run our database.
+
+00:02:15.000 --> 00:02:16.000
+Another problem we have to solve is
+what if our website gets really popular
+
+00:02:16.000 --> 00:02:17.000
+during the holiday season and we start
+getting a lot of requests and internet
+
+00:02:17.000 --> 00:02:18.000
+traffic that our server can't
+handle. With cloud computing,
+
+00:02:18.000 --> 00:02:19.000
+we can set up multiple VMs running these
+same backend code and then set up a
+
+00:02:19.000 --> 00:02:20.000
+special VM in front of these
+called a load balancer,
+
+00:02:20.000 --> 00:02:21.000
+and the load balancer will distribute
+requests evenly across our VMs.
+
+00:02:21.000 --> 00:02:22.000
+Once a holiday season is over,
+
+00:02:22.000 --> 00:02:23.000
+we can just shut off our VMs when we
+don't need them. This is a lot easier than
+
+00:02:23.000 --> 00:02:24.000
+having to buy physical computers
+where if the holiday season is over,
+
+00:02:24.000 --> 00:02:25.000
+you still have the physical
+computers that you paid for,
+
+00:02:25.000 --> 00:02:26.000
+but we still have another problem.
+
+00:02:26.000 --> 00:02:27.000
+We now have a lot of VMs that
+we need to create and set up,
+
+00:02:27.000 --> 00:02:28.000
+and it takes a lot of time and effort.
+
+00:02:28.000 --> 00:02:29.000
+Cloud computing companies offer another
+service called a PAs a platform As a
+
+00:02:29.000 --> 00:02:30.000
+service, a PAs just lets
+us upload our backend code.
+
+00:02:30.000 --> 00:02:31.000
+It will set up all the VMs
+including the load balancer,
+
+00:02:31.000 --> 00:02:32.000
+and integrate everything for us.
+
+00:02:32.000 --> 00:02:33.000
+The three most popular paths are
+Elastic Beanstalk for AWS App Engine for
+
+00:02:33.000 --> 00:02:34.000
+GCP and App Service for Microsoft Azure.
+
+00:02:34.000 --> 00:02:35.000
+The next concept we're going
+to look at is microservices.
+
+00:02:35.000 --> 00:02:36.000
+For our Amazon example,
+
+00:02:36.000 --> 00:02:37.000
+let's say that our backend contains code
+that saves an order to the database,
+
+00:02:37.000 --> 00:02:38.000
+charges the user's credit card,
+
+00:02:38.000 --> 00:02:39.000
+and sends an email confirmation.
+In the real world,
+
+00:02:39.000 --> 00:02:40.000
+this backend can be
+millions of lines of code.
+
+00:02:40.000 --> 00:02:41.000
+So we split this up into three code bases.
+
+00:02:41.000 --> 00:02:42.000
+Then each of these code bases
+will have their own backend,
+
+00:02:42.000 --> 00:02:43.000
+each with the load balancer and
+sometimes their own database.
+
+00:02:43.000 --> 00:02:44.000
+Then when we need to send an email,
+
+00:02:44.000 --> 00:02:45.000
+our orders backend will send a
+request to the email backend,
+
+00:02:45.000 --> 00:02:46.000
+which will send the email.
+
+00:02:46.000 --> 00:02:47.000
+So splitting up our backend into
+separate backends like this is called
+
+00:02:47.000 --> 00:02:48.000
+microservices, and it helps keep our
+code base smaller and more focused.
+
+00:02:48.000 --> 00:02:49.000
+Each microservice does not have to
+use the same programming language and
+
+00:02:49.000 --> 00:02:50.000
+database.
+
+00:02:50.000 --> 00:02:51.000
+One microservice can be using JavaScript
+and MongoDB while another microservice
+
+00:02:51.000 --> 00:02:52.000
+can be using Python and MySQL.
+Now, to make this even easier,
+
+00:02:52.000 --> 00:02:53.000
+there are companies out there like
+Twilio who have already created an email
+
+00:02:53.000 --> 00:02:54.000
+service.
+
+00:02:54.000 --> 00:02:55.000
+So Twilio provides a backend and an API
+for sending emails. So instead of us
+
+00:02:55.000 --> 00:02:56.000
+creating our own email microservice,
+
+00:02:56.000 --> 00:02:57.000
+our backend can just send
+requests to Twilio's backend.
+
+00:02:57.000 --> 00:02:58.000
+When a company provides a backend and an
+API that outside applications can use,
+
+00:02:58.000 --> 00:02:59.000
+this is called a SaaS,
+software as a service.
+
+00:02:59.000 --> 00:03:00.000
+Pretty much everything you do in
+the backend that's complicated.
+
+00:03:00.000 --> 00:03:01.000
+This probably a SaaS company out there
+that already provides that service,
+
+00:03:01.000 --> 00:03:02.000
+and you can just use that service instead
+of building your own microservice.
+
+00:03:02.000 --> 00:03:03.000
+So these three concepts we just looked
+at, infrastructure as a service,
+
+00:03:03.000 --> 00:03:04.000
+platforms as a service,
+
+00:03:04.000 --> 00:03:05.000
+and software as a service are the
+three foundations of cloud computing.
+
+00:03:05.000 --> 00:03:06.000
+These days,
+
+00:03:06.000 --> 00:03:07.000
+most companies use cloud computing to run
+the backend for their websites instead
+
+00:03:07.000 --> 00:03:08.000
+of buying and managing physical servers
+themselves. In this last section,
+
+00:03:08.000 --> 00:03:09.000
+I want to introduce some additional
+technologies you might see in the backend.
+
+00:03:09.000 --> 00:03:10.000
+Previously, we mentioned the
+databases, MySQL, Postgres,
+
+00:03:10.000 --> 00:03:11.000
+and MongoDB. These are sometimes called
+primary databases because they're the
+
+00:03:11.000 --> 00:03:12.000
+main database that our
+website uses. Generally,
+
+00:03:12.000 --> 00:03:13.000
+we start our backend with a server and
+a primary database and then bring in
+
+00:03:13.000 --> 00:03:14.000
+these additional
+technologies if we need to,
+
+00:03:14.000 --> 00:03:15.000
+if we allow our users to upload images.
+
+00:03:15.000 --> 00:03:16.000
+A primary database is not
+good for storing images,
+
+00:03:16.000 --> 00:03:17.000
+so we would use a blob store like aws, s3,
+
+00:03:17.000 --> 00:03:18.000
+and a CDN like CloudFront to store
+and load user uploaded images
+
+00:03:18.000 --> 00:03:19.000
+if we want to allow text search.
+
+00:03:19.000 --> 00:03:20.000
+Primary databases are
+very slow at text search,
+
+00:03:20.000 --> 00:03:21.000
+so we would bring in a search
+database like Elastic Search.
+
+00:03:21.000 --> 00:03:22.000
+If our website is getting a lot of traffic
+and we need to take some stress off
+
+00:03:22.000 --> 00:03:23.000
+our primary database, we would add a
+cache like Redis to improve performance.
+
+00:03:23.000 --> 00:03:24.000
+If.
+
+00:03:24.000 --> 00:03:25.000
+We want to do data science,
+
+00:03:25.000 --> 00:03:26.000
+we don't want to do the data
+analysis using our primary database.
+
+00:03:26.000 --> 00:03:27.000
+It's busy running our website.
+
+00:03:27.000 --> 00:03:28.000
+So we would copy all of our data into
+an analytical database like Snowflake,
+
+00:03:28.000 --> 00:03:29.000
+which is really good for doing
+data science on the side.
+
+00:03:29.000 --> 00:03:30.000
+If you want to schedule a
+task for later. For example,
+
+00:03:30.000 --> 00:03:31.000
+Amazon might want to email their users
+before their Amazon Prime subscription
+
+00:03:31.000 --> 00:03:32.000
+renews.
+
+00:03:32.000 --> 00:03:33.000
+We would use a job queue like Rabbit MQ
+to schedule this task for the future,
+
+00:03:33.000 --> 00:03:34.000
+and there's a bunch more technologies
+like these out there that are made to
+
+00:03:34.000 --> 00:03:35.000
+solve specific problems.
+
+00:03:35.000 --> 00:03:36.000
+So these are all the backend technologies
+that we covered in this video.
+
+00:03:36.000 --> 00:03:37.000
+If you're just starting out,
+
+00:03:37.000 --> 00:03:38.000
+you mostly just need to know
+how to use cloud computing,
+
+00:03:38.000 --> 00:03:39.000
+a backend framework in a primary database.
+
+00:03:39.000 --> 00:03:40.000
+These other technologies are
+things that you may or may not use.
+
+00:03:40.000 --> 00:03:41.000
+You would add them to your backend
+depending on what kind of website and
+
+00:03:41.000 --> 00:03:42.000
+features you're trying to
+make. Thanks for watching.
+
+00:03:42.000 --> 00:03:43.000
+My name is Simon from Super simple.dev.
+
+00:03:43.000 --> 00:03:44.000
+I want to make a tech
+career possible for anyone.
+
+00:03:44.000 --> 00:03:45.000
+If you have any questions or comments,
+
+00:03:45.000 --> 00:03:46.000
+please leave them down below and
+I'll see you in the next one.

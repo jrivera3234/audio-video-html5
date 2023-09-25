@@ -1,0 +1,487 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.000
+Every website can be split up into two
+
+00:00:01.000 --> 00:00:02.000
+parts: the frontend and the backend.
+
+00:00:02.000 --> 00:00:03.000
+The frontend is all the visual stuff
+
+00:00:03.000 --> 00:00:04.000
+you see on the web page: the images, the
+
+00:00:04.000 --> 00:00:05.000
+text, the buttons, and the backend is
+
+00:00:05.000 --> 00:00:06.000
+what saves and manages your data, for
+
+00:00:06.000 --> 00:00:07.000
+example your amazon order history. In
+
+00:00:07.000 --> 00:00:08.000
+this video I'm going to explain all the
+
+00:00:08.000 --> 00:00:09.000
+technologies that are used in the front
+
+00:00:09.000 --> 00:00:10.000
+end of a web application, and in another
+
+00:00:10.000 --> 00:00:11.000
+video we'll explore the backend let's
+
+00:00:11.000 --> 00:00:12.000
+get started.
+
+00:00:12.000 --> 00:00:13.000
+We're going to start with a blank web
+
+00:00:13.000 --> 00:00:14.000
+page and the first technology we're
+
+00:00:14.000 --> 00:00:15.000
+going to look at is html. html stands for
+
+00:00:15.000 --> 00:00:16.000
+hyper text markup language and is used
+
+00:00:16.000 --> 00:00:17.000
+to add content to our web page. For
+
+00:00:17.000 --> 00:00:18.000
+example, I can write this bit of html to
+
+00:00:18.000 --> 00:00:19.000
+add a button.
+
+00:00:19.000 --> 00:00:20.000
+I can also add other types of content,
+
+00:00:20.000 --> 00:00:21.000
+like images, and text and if I write more
+
+00:00:21.000 --> 00:00:22.000
+html, it will add more content to my page.
+
+00:00:22.000 --> 00:00:23.000
+But you'll notice that our page doesn't
+
+00:00:23.000 --> 00:00:24.000
+look very good. That's where css comes in.
+
+00:00:24.000 --> 00:00:25.000
+css stands for cascading style sheets,
+
+00:00:25.000 --> 00:00:26.000
+and based on the name, it's used to style
+
+00:00:26.000 --> 00:00:27.000
+our web page, so it's used to make our
+
+00:00:27.000 --> 00:00:28.000
+web page look good, by letting us adjust
+
+00:00:28.000 --> 00:00:29.000
+colors, sizes, spacing, things like that.
+
+00:00:29.000 --> 00:00:30.000
+Let's add some css to our page.
+
+00:00:30.000 --> 00:00:31.000
+So now that looks much better, but we're
+
+00:00:31.000 --> 00:00:32.000
+not done here.
+
+00:00:32.000 --> 00:00:33.000
+Let's say that I want to filter these
+
+00:00:33.000 --> 00:00:34.000
+products, and only show one brand of
+
+00:00:34.000 --> 00:00:35.000
+shoes, so I click this checkbox.
+
+00:00:35.000 --> 00:00:36.000
+But you'll notice that nothing happens
+
+00:00:36.000 --> 00:00:37.000
+and this is where javascript comes in.
+
+00:00:37.000 --> 00:00:38.000
+html and css only display things on our
+
+00:00:38.000 --> 00:00:39.000
+web page, but javascript is what makes
+
+00:00:39.000 --> 00:00:40.000
+our web page interactive.
+
+00:00:40.000 --> 00:00:41.000
+So for example, when we click something,
+
+00:00:41.000 --> 00:00:42.000
+and type something, a bit of javascript
+
+00:00:42.000 --> 00:00:43.000
+code will update the page based on what
+
+00:00:43.000 --> 00:00:44.000
+we did.
+
+00:00:44.000 --> 00:00:45.000
+The most important feature of javascript
+
+00:00:45.000 --> 00:00:46.000
+is something called the document object
+
+00:00:46.000 --> 00:00:47.000
+model, or the dom.
+
+00:00:47.000 --> 00:00:48.000
+The dom allows javascript to change the
+
+00:00:48.000 --> 00:00:49.000
+web page.
+
+00:00:49.000 --> 00:00:50.000
+For example, this bit of javascript code
+
+00:00:50.000 --> 00:00:51.000
+uses the dom to change the text in the
+
+00:00:51.000 --> 00:00:52.000
+button.
+
+00:00:52.000 --> 00:00:53.000
+And this is how javascript makes pages
+
+00:00:53.000 --> 00:00:54.000
+interactive.
+
+00:00:54.000 --> 00:00:55.000
+However, using the dom directly like this
+
+00:00:55.000 --> 00:00:56.000
+is really repetitive, and hard to manage
+
+00:00:56.000 --> 00:00:57.000
+and that's why we use a javascript
+
+00:00:57.000 --> 00:00:58.000
+framework.
+
+00:00:58.000 --> 00:00:59.000
+Javascript frameworks give us a much
+
+00:00:59.000 --> 00:01:00.000
+nicer way to create our web page, and
+
+00:01:00.000 --> 00:01:01.000
+they take care of updating the page for
+
+00:01:01.000 --> 00:01:02.000
+us, so we never use the dom directly
+
+00:01:02.000 --> 00:01:03.000
+anymore.
+
+00:01:03.000 --> 00:01:04.000
+The most popular ones are react.js,
+
+00:01:04.000 --> 00:01:05.000
+angular, and vue.js.
+
+00:01:05.000 --> 00:01:06.000
+Now let's take a step back, and look at
+
+00:01:06.000 --> 00:01:07.000
+javascript again.
+
+00:01:07.000 --> 00:01:08.000
+Javascript as a language is missing a
+
+00:01:08.000 --> 00:01:09.000
+lot of features that other programming
+
+00:01:09.000 --> 00:01:10.000
+languages have.
+
+00:01:10.000 --> 00:01:11.000
+One of these features is being able to
+
+00:01:11.000 --> 00:01:12.000
+split up our code into different files,
+
+00:01:12.000 --> 00:01:13.000
+and to organize our code.
+
+00:01:13.000 --> 00:01:14.000
+To solve this we have to use something
+
+00:01:14.000 --> 00:01:15.000
+called a bundler. The most popular one
+
+00:01:15.000 --> 00:01:16.000
+you've probably heard of is called
+
+00:01:16.000 --> 00:01:17.000
+webpack.
+
+00:01:17.000 --> 00:01:18.000
+Webpack lets us split up our javascript
+
+00:01:18.000 --> 00:01:19.000
+code into many different files, and once
+
+00:01:19.000 --> 00:01:20.000
+we're ready to put it on our website,
+
+00:01:20.000 --> 00:01:21.000
+webpack will combine all of these files,
+
+00:01:21.000 --> 00:01:22.000
+or bundle all of these files into one
+
+00:01:22.000 --> 00:01:23.000
+javascript file that we can put on our
+
+00:01:23.000 --> 00:01:24.000
+website.
+
+00:01:24.000 --> 00:01:25.000
+Another tool that we use is called a
+
+00:01:25.000 --> 00:01:26.000
+transpiler. The most popular one you
+
+00:01:26.000 --> 00:01:27.000
+probably heard of is called typescript.
+
+00:01:27.000 --> 00:01:28.000
+A transpiler adds extra features onto
+
+00:01:28.000 --> 00:01:29.000
+javascript. It lets us write an enhanced
+
+00:01:29.000 --> 00:01:30.000
+version of javascript, and then once
+
+00:01:30.000 --> 00:01:31.000
+we're done it will transform the
+
+00:01:31.000 --> 00:01:32.000
+enhanced javascript back into normal
+
+00:01:32.000 --> 00:01:33.000
+javascript because browsers like google
+
+00:01:33.000 --> 00:01:34.000
+chrome can only understand normal
+
+00:01:34.000 --> 00:01:35.000
+javascript.
+
+00:01:35.000 --> 00:01:36.000
+So those are the major technologies in
+
+00:01:36.000 --> 00:01:37.000
+the javascript world.
+
+00:01:37.000 --> 00:01:38.000
+Now we're going to move over to css.
+
+00:01:38.000 --> 00:01:39.000
+css as a language has the same problems
+
+00:01:39.000 --> 00:01:40.000
+as javascript. We can't organize our code
+
+00:01:40.000 --> 00:01:41.000
+into different files, and css is missing
+
+00:01:41.000 --> 00:01:42.000
+a lot of useful features, so we also use
+
+00:01:42.000 --> 00:01:43.000
+a bundler and a transpiler for css.
+
+00:01:43.000 --> 00:01:44.000
+There's a special name for this called a
+
+00:01:44.000 --> 00:01:45.000
+css preprocessor. It's basically the
+
+00:01:45.000 --> 00:01:46.000
+combination of a bundler and a
+
+00:01:46.000 --> 00:01:47.000
+transpiler. The most popular css
+
+00:01:47.000 --> 00:01:48.000
+preprocessor you probably heard of is
+
+00:01:48.000 --> 00:01:49.000
+called sass.
+
+00:01:49.000 --> 00:01:50.000
+sass lets us organize our css into
+
+00:01:50.000 --> 00:01:51.000
+different files, and it lets us write
+
+00:01:51.000 --> 00:01:52.000
+enhanced css,
+
+00:01:52.000 --> 00:01:53.000
+and then it will bundle all those files
+
+00:01:53.000 --> 00:01:54.000
+together into one file, and it will
+
+00:01:54.000 --> 00:01:55.000
+transform the enhanced css back into
+
+00:01:55.000 --> 00:01:56.000
+normal css. So you can think of it sort
+
+00:01:56.000 --> 00:01:57.000
+of like a bundler and a transpiler
+
+00:01:57.000 --> 00:01:58.000
+combined. Now, once we had css
+
+00:01:58.000 --> 00:01:59.000
+preprocessors, developers start to create
+
+00:01:59.000 --> 00:02:00.000
+css frameworks, the most popular one
+
+00:02:00.000 --> 00:02:01.000
+being bootstrap.
+
+00:02:01.000 --> 00:02:02.000
+css frameworks are basically a whole
+
+00:02:02.000 --> 00:02:03.000
+bunch of css code that someone else
+
+00:02:03.000 --> 00:02:04.000
+wrote, and it helps us solve common
+
+00:02:04.000 --> 00:02:05.000
+problems, so using a framework like
+
+00:02:05.000 --> 00:02:06.000
+bootstrap saves us a lot of time.
+
+00:02:06.000 --> 00:02:07.000
+The last thing we're going to look at is
+
+00:02:07.000 --> 00:02:08.000
+how does the frontend communicate with
+
+00:02:08.000 --> 00:02:09.000
+the backend?
+
+00:02:09.000 --> 00:02:10.000
+For example let's say I'm on amazon and
+
+00:02:10.000 --> 00:02:11.000
+I want to make an order. How does this
+
+00:02:11.000 --> 00:02:12.000
+order get sent from my computer to
+
+00:02:12.000 --> 00:02:13.000
+amazon?
+
+00:02:13.000 --> 00:02:14.000
+Javascript has a feature for this too
+
+00:02:14.000 --> 00:02:15.000
+called XMLHttpRequest. It lets us send
+
+00:02:15.000 --> 00:02:16.000
+a message, in this case we're going to
+
+00:02:16.000 --> 00:02:17.000
+send our amazon order, to a url like
+
+00:02:17.000 --> 00:02:18.000
+amazon.com/
+
+00:02:18.000 --> 00:02:19.000
+create-order. On the other side, amazon's
+
+00:02:19.000 --> 00:02:20.000
+backend is listening for these messages
+
+00:02:20.000 --> 00:02:21.000
+sent to this url and that's how they get
+
+00:02:21.000 --> 00:02:22.000
+our order. We're going to talk more about
+
+00:02:22.000 --> 00:02:23.000
+this process in our backend video that
+
+00:02:23.000 --> 00:02:24.000
+you can find in the description.
+
+00:02:24.000 --> 00:02:25.000
+Over the years we've improved on
+
+00:02:25.000 --> 00:02:26.000
+XMLHttpRequest and these days we use tools
+
+00:02:26.000 --> 00:02:27.000
+like axios or fetch to send messages to
+
+00:02:27.000 --> 00:02:28.000
+the backend.
+
+00:02:28.000 --> 00:02:29.000
+Alright, so these are all the
+
+00:02:29.000 --> 00:02:30.000
+technologies we need to build the frontend.
+
+00:02:30.000 --> 00:02:31.000
+You'll notice that it's really just
+
+00:02:31.000 --> 00:02:32.000
+html, css, and javascript. The other
+
+00:02:32.000 --> 00:02:33.000
+technologies make css and javascript
+
+00:02:33.000 --> 00:02:34.000
+easier to work with. Let me know in the
+
+00:02:34.000 --> 00:02:35.000
+comments how many of these technologies
+
+00:02:35.000 --> 00:02:36.000
+you already knew, and if anything was new
+
+00:02:36.000 --> 00:02:37.000
+to you. Thanks for watching, my name is
+
+00:02:37.000 --> 00:02:38.000
+simon from supersimple.dev I want to
+
+00:02:38.000 --> 00:02:39.000
+make a tech career possible for anyone.
+
+00:02:39.000 --> 00:02:40.000
+You can find my contact info in the
+
+00:02:40.000 --> 00:02:41.000
+description, and I'll see you in the next
+
+00:02:41.000 --> 00:02:42.000
+one.

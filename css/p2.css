@@ -1,0 +1,47 @@
+/* CSS Document */
+/* All comments go between the front slash and asterisk symbols */
+
+body {
+	background-image: url("../img/pg2.jpeg");   /* background color */
+	color: #444;          /* text color for the entire document */
+	font-size: 12px;
+	font-family:Verdana, Geneva, sans-serif;
+	text-align: center;
+	background-size: cover;
+}
+a {
+	padding:15px;
+	margin: 3px;
+	font-size:125%;
+	background-color:#0fc4b3;
+	color: white;
+}
+
+a:hover {
+	font-size:200%;
+	background-color:rgb(248 137 242);
+	color: #fff;
+}
+
+#wrapper {
+	width:900px;
+	margin:0 auto;         /* centers wrapper */
+    text-align:center;
+	background-color: rgba(255, 255, 255, 0.8);
+	}
+
+table {
+	margin:0 auto; 
+}
+
+td {
+	background-color: #ffffff8f;
+}
+
+h1, h2 { 
+	text-align:center;     /* centers h1 and h2 content */
+}
+
+audio { 
+	width:200px;
+}

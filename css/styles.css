@@ -1,0 +1,47 @@
+/* CSS Document */
+/* All comments go between the front slash and asterisk symbols */
+
+body {
+	background-image: url("../img/spanish-numbers.webp");   /* background color */
+	color: #444;          /* text color for the entire document */
+	font-size: 12px;
+	font-family:Verdana, Geneva, sans-serif;
+	text-align: center;
+	background-size: cover;
+}
+a {
+	padding:15px;
+	margin: 3px;
+	font-size:125%;
+	background-color:#fe7508;
+	color: white;
+}
+
+a:hover {
+	font-size:200%;
+	background-color:rgb(255 255 255 / 43%);
+	color: #000
+}
+
+#wrapper {
+	width:900px;
+	margin:0 auto;         /* centers wrapper */
+    text-align:center;
+	background-color: rgba(255, 255, 255, 0.8);
+	}
+
+table {
+	margin:0 auto; 
+}
+
+td {
+	background-color: #ffffff8f;
+}
+
+h1, h2 { 
+	text-align:center;     /* centers h1 and h2 content */
+}
+
+audio { 
+	width:200px;
+}
